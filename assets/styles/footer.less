@@ -1,0 +1,165 @@
+@import "fonts";
+
+.footer {
+  background-color:#141414;
+
+  .wrapper {
+    padding-bottom: 36px;
+  }
+
+  .footer-section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    section {
+      padding-top: 50px;
+    }
+  }
+
+
+
+  h1 {
+    color: #fefefe;
+    font-family: "ProximaNovaBold";
+    font-size: 20px;
+    line-height: 42.73px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  .footer-text {
+    color: #646464;
+    font-family: "MyriadProRegular";
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer-legal-inf {
+    width: 219px;
+
+  }
+
+  .footer-about-us {
+    width: 357px;
+
+    p:nth-child(odd) {
+      padding: 10px 0 10px 0 ;
+    }
+  }
+
+
+.footer-contacts {
+  width: 200px;
+
+  .footer-email {
+    color: #ffffff;
+    font-family: "ProximaNovaRegular";
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+  }
+
+  .footer-phone {
+    color: #ffc733;
+    font-family: "ProximaNovaBold";
+    font-size: 20px;
+    line-height: 42.73px;
+    text-transform: uppercase;
+  }
+}
+
+  .footer-accept {
+    width: 357px;
+  }
+
+  .footer-accept-payment {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    div {
+      padding-bottom: 20px;
+
+      svg {
+        width: 160px;
+      }
+    }
+
+  }
+
+  .footer-FCA {
+    width: 357px;
+  }
+
+  .footer-disclaimer {
+    width: 769px;
+  }
+}
+
+.footer-copyrightsocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  .footer-copyright {
+    color: #3d3d3d;
+    font-family: "ProximaNovaRegular";
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 150px;
+
+    i {
+      color:#ffc733;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover, &:active, &:focus {
+        color: #ffea00;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: @screen-tablet) {
+
+  .footer {
+    .footer-contacts-and-pay {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .footer-disclaimer {
+      width: 357px;
+    }
+  }
+
+
+}
+
+@media (max-width : @screen-mobile) {
+  .footer {
+    .footer-contacts-and-pay {
+
+      flex-wrap: wrap;
+
+      .footer-accept {
+        padding-top: 50px;
+      }
+    }
+
+  }
+}

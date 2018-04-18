@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="build/styles.min.css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <title>SOLARDigital_Test_Task</title>
+</head>
+<body>
+<header class="main-page  main-page-2 slider-container" id="main-page">
+    <div class="slider-wrapper">
+        <div class="banner slider1"></div>
+        <div class="banner slider2"></div>
+        <div class="banner slider3"></div>
+        <div class="wrapper" >
+            <div class="header" id="header">
+                <div class="hamburger-btn" onclick="toggleSidebar(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo opacity" id="logo">
+                    <img src="assets/img/logo.png" alt="logo">
+                    <img src="assets/img/logo-1.png" alt="logo-1">
+                </div>
+                <div class="menu " id="main-page-menu-dropdown">
+                    <ul>
+                        <li><a href="#trade" class="menu-link">trade</a></li>
+                        <li><a href="#learn" class="menu-link">learn</a></li>
+                        <li><a href="#platforms" class="menu-link">platforms</a></li>
+                        <li><a href="#partners" class="menu-link">partners</a></li>
+                    </ul>
+                    <div class="foreign-exchange">
+                        <img src="assets/img/tablet/tablet.png" alt="tablet">
+                        <span>
+                            Free introduction to
+                            foreign exchange e-book
+                        </span>
+                        <button>Get it</button>
+                    </div>
+                </div>
+                <div class="main-page-dropdown">
+                    <a href="#" class="btn-trade-now">
+                        TRADE NOW
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="main-page-sign-up" id="sign-up">
+                    <a href="#" class="btn-trade-now">sign up</a>
+                </div>
+                <div class="main-page-log-in" id="log-in">
+                    <span>Welcome,</span>
+                    <a href="#">
+                        Peter Karsten
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="main-page-login">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+            <div class="text-step-link">
+                <ul>
+                    <li><a href="#" class="menu-link">FOREX</a></li>
+                    <li>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <a href="#" class="menu-link">INDICES</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <a href="#" class="menu-link">COMODITIES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-text">INTEGRITY MATTERS</div>
+            <div class="main-text-tablet">INTEGRITY<br>MATTERS</div>
+            <div class="subtext">
+                We’re regulated by the UK’s Financial Conduct Authority.
+                <br>All client deposits are held in Barclays Bank and are protected – up to <span>£50,000</span> – by the FSCS
+            </div>
+            <div class="main-page-active">
+                <button class="main-page-btn">START TRADING NOW<br><span>*demo account included</span></button>
+                <div class="main-page-icon-video">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <br><div class="main-page-text-play">play video</div>
+                </div>
+                <div class="main-page-text-video">
+                    <h3>why to trade<br>with infifox</h3>
+                    <div>Robert barkley</div>
+                    <span>CEO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-control">
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="detail-information" id="detail-information">
+        <div class="wrapper">
+            <div class="detail-inf-block trading triangle-right wow zoomIn">
+                <h2>MT4 TRADING</h2>
+                <p>The trading platform. Download  and start trading now</p>
+                    <img src="assets/img/detail-inf-img-1.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button class="btn-empty-background"><i class="fa fa-download" aria-hidden="true"></i>download</button>
+                    <button><i class="fa fa-user" aria-hidden="true"></i>Login</button>
+                </div>
+            </div>
+            <div class="detail-inf-block mobile wow zoomIn">
+                <h2>MT4 MOBILE?</h2>
+                <p>Trage on the go. Don't miss the market. Don't miss themarket</p>
+                <img src="assets/img/detail-inf-img-2.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button><i class="fa fa-apple" aria-hidden="true"></i>App store</button>
+                    <button><i class="fa fa-play" aria-hidden="true"></i>google play</button>
+                </div>
+            </div>
+            <div class="detail-inf-block range-future wow zoomIn">
+                <h2>Range future</h2>
+                <p>The Latest financial trading instrument. Range futures is a revolutointo the marker</p>
+                <img src="assets/img/detail-inf-img-3.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button class="btn-empty-background"><i class="fa fa-download" aria-hidden="true"></i>download</button>
+                    <button><i class="fa fa-user" aria-hidden="true"></i>Login</button>
+                </div>
+            </div>
+            <div class="detail-inf-block webtrader wow zoomIn">
+                <h2>Webtrader</h2>
+                <p>Trade Forex directly from your browser
+                    Start trading in just a couple of clicks </p>
+                <img src="assets/img/detail-inf-img-1.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button class="big-btn"><i class="fa fa-user" aria-hidden="true"></i>Login</button>
+                </div>
+            </div>
+            <div class="detail-inf-block MT4-expert wow zoomIn">
+                <h2>Get mt4 Expert</h2>
+                <p>The trading terminal that rivails most advanced , institutional</p>
+                <img src="assets/img/detail-inf-img-4.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button><i class="fa fa-user" aria-hidden="true"></i>Upgrate</button>
+                </div>
+            </div>
+            <div class="detail-inf-block infifox-vps wow zoomIn">
+                <h2>Infifox vps</h2>
+                <p>Experience the speed of VPS Trade throught your own server </p>
+                <img src="assets/img/detail-inf-img-5.png" alt="img">
+                <div class="detail-inf-btn">
+                    <button class="btn-empty-background">How it works</button>
+                    <button><i class="fa fa-desktop" aria-hidden="true"></i>Connect</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trading-power">
+       <div class="wrapper">
+            <div class="trading-power-header wow fadeInLeft">
+                <h1>Trading<br>power<i class="fa fa-bar-chart" aria-hidden="true"></i></h1>
+                <button>About Infifox</button>
+            </div>
+            <div class="trading-power-statistics wow fadeInRight">
+                <div class="trading-power-inf">
+                   <h3><i class="fa fa-play" aria-hidden="true"></i>Already traded in 2016</h3>
+                   <span>£100,000,000.00</span>
+               </div>
+               <div class="trading-power-inf">
+                   <h3><i class="fa fa-play" aria-hidden="true"></i>FCA authorised and regulated </h3>
+                   <span>since 2009</span>
+               </div>
+                <button>About Infifox</button>
+            </div>
+
+       </div>
+   </section>
+    <section class="learn-to-trade">
+            <div class="wrapper">
+                <div class="learn-to-trade-content">
+                    <h1>Learn<br>to trade <i class="fa fa-book" aria-hidden="true"></i></h1>
+                    <h3 class="subtitle">Our ecosystem enables and empowers our clients. </h3>
+                    <p>Practice accounts, feefree trading accounts low deposits are supported by our
+                        products and tools to aid training and education, and enhance
+                        clients’ knowledge and trading performance.
+                    </p>
+                    <div class="learn-to-trade-btn">
+                        <div>
+                            <button class="btn-watch">Watch guides</button>
+                            <br><span>Forex | Commodities | Indexes</span>
+                        </div>
+                        <div>
+                            <button class="btn-webinar btn-empty-background">Webinar schedule</button>
+                            <br><span>Join our webinars and learn from experts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="testimonial">
+        <div class="wrapper">
+            <h1>Testimonial<i class="fa fa-comment-o" aria-hidden="true"></i></h1>
+            <div class="testimonial-video-slider wow zoomIn">
+                <div class="testimonial-video wow zoomIn">
+                    <div class="video item-1">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <img src="assets/img/video-1.jpg" alt="video"></div>
+                    <div class="testimonial-describe-human">
+                        <div class="testimonial-name">Roth Eisenberg </div>
+                        <div class="testimonial-position">Designer/Founder</div>
+                        <span class="testimonial-email">tatly.com</span>
+                    </div>
+                </div>
+                <div class="testimonial-video wow zoomIn">
+                    <div class="video item-2">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <img src="assets/img/video-2.jpg" alt="video">
+                    </div>
+                    <div class="testimonial-describe-human">
+                        <div class="testimonial-name">Britany Hemfold </div>
+                        <div class="testimonial-position">Manager </div>
+                        <span class="testimonial-email">borsch.me</span>
+                    </div>
+                </div>
+                <div class="testimonial-video wow zoomIn">
+                    <div class="video item-3">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <img src="assets/img/video-3.jpg" alt="video">
+                    </div>
+                    <div class="testimonial-describe-human">
+                        <div class="testimonial-name">Bob Kirs </div>
+                        <div class="testimonial-position">Founder —  </div>
+                        <span class="testimonial-email">seofarm.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <section class="characteristic">
+        <div class="wrapper">
+            <div class="characteristic-item">
+                <div class="characteristic-img">
+                    <img src="assets/img/icons/BritishFramework.png" alt="British Framework">
+                </div>
+                <h3 class="characteristic-header">British Framework</h3>
+                <div class="characteristic-text">
+                    We’re regulated by the UK’s Financial Conduct Authority. All client deposits are held in Barclays Bank and are protected – up to £50,000 – by the FSCS
+                </div>
+            </div>
+            <div class="characteristic-item">
+                <div class="characteristic-img">
+                    <img src="assets/img/icons/FastInfrastructure.png" alt="Fast infrastructure">
+                </div>
+                <h3 class="characteristic-header">Fast infrastructure</h3>
+                <div class="characteristic-text">
+                    All formats use the latest cloud acceleration and content delivery networks to connect data feeds and enable trade processing.
+                </div>
+            </div>
+            <div class="characteristic-item">
+                <div class="characteristic-img">
+                    <img src="assets/img/icons/PremiumExperience.png" alt="Premium Experience">
+                </div>
+                <h3 class="characteristic-header">Premium Experience</h3>
+                <div class="characteristic-text">
+                    First-class technology combine with outstanding customer service to create a premium customer experience.
+                </div>
+            </div>
+            <div class="characteristic-item">
+                <div class="characteristic-img">
+                    <img src="assets/img/icons/Accessibility.png" alt=">Accessibility">
+                </div>
+                <h3 class="characteristic-header">Accessibility</h3>
+                <div class="characteristic-text">
+                    Practice accounts available for all new customers and we have an ever-expanding, extensive range of tools to aid your training and enhance your skill
+                </div>
+            </div>
+            <div class="characteristic-item">
+                <div class="characteristic-img">
+                    <img src="assets/img/icons/CompetitivePricing.png" alt="Competitive Pricing">
+                </div>
+                <h3 class="characteristic-header">Competitive Pricing</h3>
+                <div class="characteristic-text">
+                    We offer PIPs as low as 0.4 and leverage of up to 300:1. No commission trading. Deposits can be as low as £100
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="business-description">
+        <div class="wrapper">
+            <div class="business-description-menu-main">
+                <ul>
+                    <li><a href="#">INFINOX</a></li>
+                    <li><a href="#">TRADE</a></li>
+                    <li><a href="#">THEORY</a></li>
+                    <li><a href="#">MT4</a></li>
+                    <li><a href="#">MT4 EXPERT</a></li>
+                    <li><a href="#">CUBOID OPTIONS</a></li>
+                </ul>
+            </div>
+            <div class="business-description-menu-tablet">
+                <nav>
+                    <ul class="main-menu">
+                        <li>
+                            <div><a href="#">INFINOX<span>&#9660;</span></a></div>
+                            <ul class="dropdown-menu-tablet">
+                                <li><a href="#">TRADE</a></li>
+                                <li><a href="#">THEORY</a></li>
+                                <li><a href="#">MT4</a></li>
+                                <li><a href="#">MT4 EXPER</a></li>
+                                <li><a href="#">CUBOID OPTIONS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="business-description-forex">
+                <h1>WHAT IS FOREX?</h1>
+                <p>
+                    Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges
+                    24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage
+                    of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies,
+                    such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one
+                    country's currency will rise or fall against the currency of another country, and take a position accordingly.
+                </p>
+                <div class="business-description-forex-btn">
+                    <button class="forex-btn-download">DOWNLOAD FREE E-BOOK</button>
+                    <button class="forex-btn-learning btn-empty-background">GO TO LEARNING CENTER</button>
+                </div>
+            </div>
+            <div class="business-description-infinox">
+                <h1>OUR BUSINESS IS BUILT
+                    <br>ON INTEGRITY AND TRUST
+                </h1>
+                <div class="business-description-infinox-list">
+                    <ul>
+                        <li>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            Our MISSION – to enable the personal ambitions and business goals of FOREX traders and IBs,
+                            through underpinning dynamic products with competitive trading parameters and a premium
+                            customer experience.
+                        </li>
+                        <li>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            One-on-one customer service 24/5 – Your own dedicated manager
+                        </li>
+                        <li>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            Trade the World 46+ fx pairs, gold, silver, oil and global indices.
+                            Dealing desk neutral for direct, real-time access to markets
+                        </li>
+                        <li>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            Cutting edge technology, speed, efficiency and reliability.
+                            Take Control Straight through Processing (STP) for speed,
+                            efficiency and instant execution
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="platforms">
+        <div class="wrapper">
+            <h1>OUR TRADING PLATFORMS</h1>
+            <div class="platforms-items">
+                <div class="platforms-item"><img src="assets/img/icons/platforms-1.png" alt="platforms-1">MT for web</div>
+                <div class="platforms-item"><img src="assets/img/icons/platforms-2.png" alt="platforms-2">MT for windows</div>
+                <div class="platforms-item"><img src="assets/img/icons/platforms-3.png" alt="platforms-3">MT for mac</div>
+                <div class="platforms-item"><img src="assets/img/icons/platforms-4.png" alt="platforms-4">MT for ios</div>
+                <div class="platforms-item"><img src="assets/img/icons/platforms-5.png" alt="platforms-5">MT for Android</div>
+                <div class="platforms-item"><img src="assets/img/icons/platforms-6.png" alt="platforms-6">MT for cuboid online</div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-section">
+            <section class="footer-legal-inf">
+                <h1>LEGAL INFORMATION</h1>
+                <ul class="footer-text">
+                    <li>INFINOX CLIENT AGREEMENT</li>
+                    <li>IB AGREEMENT</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>SIPP APPLICATION FORM</li>
+                    <li>LEGAL INFORMATION</li>
+                    <li>FAIR USAGE POLICY</li>
+                    <li>CORPORATE APPLICATION</li>
+                    <li>EXECUTION ONLY RISK WARNING</li>
+                    <li>OBJECTIVES STATEMENT</li>
+                </ul>
+            </section>
+            <section class="footer-about-us">
+                <h1>About us</h1>
+                <p class="footer-text">Spreads From 0.5 pips - Leverage Up To 300:1 - No Requotes Trade Online 24/5 - Forex. Indices. Commodities. Options</p>
+                <p class="footer-text">INFINOX CAPITAL Ltd is a company registered in England and Wales under number 06854853. Registered Ofice: Birchin Court 20 Birchin Lane, London, EC3V 9DU, United Kingdom</p>
+                <p class="footer-text">INFINOX is a major provider of online foreign exchange (Forex) trading services, ofering margin FX and commodities trading to individuals and institutional clients worldwide.</p>
+            </section>
+            <section class="footer-contacts-and-pay">
+                <div class="footer-contacts">
+                    <h1>CONTACTS</h1>
+                    <div class="footer-email">support@infinox.com</div>
+                    <div class="footer-phone">+44(0)20 3713 4490</div>
+                </div>
+                <div class="footer-accept">
+                    <h1>we accept</h1>
+                    <div class="footer-accept-payment">
+                        <div>
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="5.186cm" height="0.917cm">
+                                <image  x="53px" y="6px" width="94px" height="13px"  xlink:href="data:img/png;base64,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" />
+                                <path fill-rule="evenodd"  fill="rgb(255, 205, 0)"
+                                      d="M13.000,0.000 C20.180,0.000 26.000,5.820 26.000,13.000 C26.000,20.180 20.180,26.000 13.000,26.000 C5.820,26.000 0.000,20.180 0.000,13.000 C0.000,5.820 5.820,0.000 13.000,0.000 Z"/>
+                                <path fill-rule="evenodd"  opacity="0.8" fill="rgb(255, 78, 0)"
+                                      d="M28.000,0.000 C35.180,0.000 41.000,5.820 41.000,13.000 C41.000,20.180 35.180,26.000 28.000,26.000 C20.820,26.000 15.000,20.180 15.000,13.000 C15.000,5.820 20.820,0.000 28.000,0.000 Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/payment-1.png" alt="payment-1">
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/payment-2.png" alt="payment-2">
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/payment-3.png" alt="payment-3">
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/payment-4.png" alt="payment-4">
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/payment-5.png" alt="payment-5">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-FCA">
+                <h1>FCA REGULATED  </h1>
+                <p class="footer-text">
+                    NFINOX CAPITAL Ltd Is authorised and regulated by the
+                    Financial Conduct Authority under firm reference number 501057.
+                </p>
+            </section>
+            <section class="footer-disclaimer">
+                <h1>Disclaimer</h1>
+                <p class="footer-text">
+                    Trading Derivatives and FOREX carries a high level of risk to your capital including losing more than your initial expenditure.
+                    The efect of leverage is that both gains and losses are magnified . You should only trade Forex if you can afford to carry these risks.
+                    The historical financial performance of any underlying instrument is no guarantee or indicator of future performance.
+                    Trading Derivatives and FOREX may not be suitable for all investors, so please ensure that you fully understand the risks involved,
+                    and seek independent advice if necessary.
+                </p>
+            </section>
+        </div>
+        <div class="footer-copyrightsocial">
+            <div class="footer-copyright">© 2016 INFINOX CAPITAL Ltd</div>
+            <div class="footer-social">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="assets/dist/wow.js"></script>
+<script src="build/scripts.min.js"></script>
+</html>

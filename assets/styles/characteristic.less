@@ -1,0 +1,69 @@
+@import "fonts";
+
+.characteristic {
+  .wrapper {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 71px;
+      .characteristic-img {
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      .characteristic-item {
+        padding-top: 63px;
+        width: 173px;
+
+        .characteristic-header {
+          color: #141414;
+          font-family: "ProximaNovaBold";
+          font-size: 14px;
+          line-height: 30px;
+          text-transform: uppercase;
+          text-align: center;
+          padding-bottom: 25px;
+
+
+        }
+        .characteristic-text {
+          color: #979797;
+          font-family: "ProximaNovaRegular";
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+  }
+}
+@media screen and (min-width: 421px) and (max-width :@screen-tablet) {
+  .characteristic {
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .characteristic-item {
+        padding-top: 63px;
+        &:nth-child(3n-1) {
+          margin:0 40px 0 40px ;
+         ;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : @screen-mobile) {
+  .characteristic {
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .characteristic-item {
+
+        .characteristic-text {
+          font-family: "MyriadProRegular";
+
+        }
+      }
+    }
+  }
+}

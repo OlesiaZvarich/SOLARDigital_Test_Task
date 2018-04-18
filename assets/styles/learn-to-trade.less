@@ -1,0 +1,213 @@
+@import "fonts";
+
+
+.learn-to-trade {
+  position: relative;
+  background: url(/assets/img/learn-to-trade-banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+   padding-bottom: 100px;
+    .learn-to-trade-content {
+      z-index: 1000;
+
+
+      h1 {
+        position: relative;
+
+        color: #141414;
+        font-family: "ProximaNovaBold";
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        padding-top: 170px;
+
+      }
+
+      i {
+        position: absolute;
+        top:150px;
+        left:160px;
+        color: #ffcd00;
+        font-size: 30px;
+      }
+
+      .subtitle {
+        color: #141414;
+        font-family: "ProximaNovaBold";
+        font-size: 20px;
+        line-height: 22px;
+        padding-top: 55px;
+      }
+      p {
+        z-index: 1000;
+        color: #979797;
+        font-family: "ProximaNovaRegular";
+        font-size: 16px;
+        width: 558px;
+        line-height: 22px;
+        padding-top: 57px;
+      }
+
+      .learn-to-trade-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:440px;
+        padding-top: 155px;
+
+
+
+        button {
+          margin-bottom: 12px;
+          height: 60px;
+        }
+
+        .btn-watch {
+          width: 170px;
+
+        }
+        .btn-empty-background {
+          width: 200px;
+
+        }
+
+        span {
+          color: #979797;
+          font-family: "ProximaNovaRegular";
+          font-size: 12px;
+          line-height: 22px;
+
+        }
+
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 421px) and (max-width: @screen-tablet) {
+
+  .learn-to-trade {
+
+    background: url(/assets/img/learn-to-trade-banner.jpg) 50% no-repeat;
+
+  .wrapper {
+  padding-bottom: 59px;
+
+    .learn-to-trade-content {
+
+      h1 {
+        padding-top: 90px;
+      }
+
+      i {
+        position: absolute;
+        top:80px;
+        left:160px;
+        color: #ffcd00;
+        font-size: 30px;
+      }
+
+      .subtitle {
+        width: 40%;
+        text-align: center;
+        padding-top: 100px;
+      }
+      p {
+        padding-top: 36px;
+        font-family: "MyriadProRegular";
+        width: 40%;
+        text-align: center;
+
+      }
+
+      .learn-to-trade-btn {
+        margin-top:600px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 42px 70px 0 70px;
+
+
+        div {
+          text-align: center;
+
+        }
+
+        .btn-watch {
+          width: 270px;
+          height: 80px;
+
+        }
+        .btn-empty-background {
+          width: 270px;
+          height: 80px;
+
+        }
+
+
+
+      }
+    }
+  }
+  }
+}
+
+@media (max-width : @screen-mobile) {
+  .learn-to-trade {
+
+    .wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .learn-to-trade-content {
+        width: 100%;
+
+        h1 {
+          padding-top: 65px;
+
+        }
+
+        i {
+          top:45px;
+        }
+
+        .subtitle {
+
+          font-family: "MyriadProRegular";
+          font-weight: 700;
+          padding-top: 180px;
+        }
+        p {
+          font-family: "MyriadProRegular";
+          width: 100%;
+          line-height: 22px;
+          padding-top: 41px;
+        }
+
+        .learn-to-trade-btn {
+          flex-wrap: wrap;
+          padding-top: 42px;
+          width: 100%;
+
+          div {
+            width:100%;
+            padding-bottom: 30px;
+            text-align: center;
+          }
+
+          .btn-watch, .btn-empty-background  {
+            width:100%;
+          }
+
+        }
+      }
+    }
+  }
+}

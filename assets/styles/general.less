@@ -1,0 +1,47 @@
+@import "fonts";
+@import "var";
+
+
+.wrapper {
+  width: @screen-main-wrapper;
+  margin:0 auto;
+}
+
+button {
+  color: #141414;
+  font-family: "ProximaNovaBold";
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 2px solid #ffcd00;
+  background-color: #ffcd00;
+  cursor: pointer;
+
+  &:hover, &:active, &:focus {
+    background-color: #f2f2f2;
+  }
+}
+.btn-empty-background {
+  border: 2px solid #ffcd00;
+  background-color: transparent;
+  &:hover, &:active, &:focus {
+    background-color: #ffcd00;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width :@screen-tablet) {
+  .wrapper {
+    width: @screen-tablet-wrapper;
+  }
+}
+
+@media (max-width : @screen-mobile) {
+  .wrapper {
+    width: @screen-mobile-wrapper;
+  }
+}
+
+
+
+

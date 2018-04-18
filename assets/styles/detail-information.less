@@ -1,0 +1,181 @@
+@import "fonts";
+
+.detail-information {
+
+  top:98%;
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+
+    .detail-inf-block {
+      position: relative;
+      width: 370px;
+      height: 580px;
+      background-color: #f2f2f2;
+      border-radius: 2px;
+      margin-bottom: 63px;
+
+
+
+      h2 {
+        display: flex;
+        color: #141414;
+        font-family: "ProximaNovaBold";
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 47px;
+
+
+
+        &:before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-left: 20px solid #FFCD00;
+          border-bottom: 15px solid transparent;
+          margin-right:20px;
+        }
+      }
+      p {
+        color: #979797;
+        font-family: "ProximaNovaRegular";
+        font-size: 16px;
+        line-height: 25px;
+        padding: 25px 40px 0  42px;
+
+      }
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+
+.detail-inf-icon {
+  color: #000;
+  z-index:3000;
+}
+
+.detail-inf-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  width: 100%;
+  bottom: 0;
+
+  button {
+    width: 150px;
+    height: 60px;
+
+    i {
+      padding-right: 10px;
+    }
+
+  }
+
+}
+
+
+.detail-inf-block&.trading {
+  top:-20px;
+  img {
+    padding-top: 55px;
+    right:0;
+  }
+
+
+
+}
+
+
+.detail-inf-block&.mobile {
+  top:-40px;
+  overflow: hidden;
+
+  img {
+    bottom:-60px;
+    padding-left: 40px;
+  }
+  p {
+    padding: 0 52px 0 42px;
+  }
+
+
+  .detail-inf-btn {
+    position: absolute;
+    bottom: 0;
+
+  }
+}
+
+.detail-inf-block&.range-future{
+  top:-20px;
+  overflow: hidden;
+  img {
+    padding-top: 35px;
+    left:-50px;
+
+  }
+
+}
+
+.detail-inf-block&.webtrader{
+  top:-20px;
+  img {
+    padding-top: 60px;
+    right: 0;
+  }
+  .detail-inf-btn {
+    padding: 0 40px 20px 40px;
+    button {
+      width: 100%;
+      height: 60px;
+    }
+  }
+}
+
+.detail-inf-block&.MT4-expert{
+  top:-40px;
+  img {
+    padding-top: 60px;
+
+  }
+  .detail-inf-btn {
+    padding: 0 40px 20px 40px;
+    button {
+      width: 100%;
+      height: 60px;
+
+    }
+  }
+}
+
+.detail-inf-block&.infifox-vps{
+  top:-20px;
+  img {
+    padding-top: 100px;
+  }
+}
+
+
+@media screen and (min-width: 421px) and (max-width :@screen-tablet) {
+
+  .detail-inf-block&.mobile,
+  .detail-inf-block&.MT4-expert {
+    top:-20px;
+  }
+}

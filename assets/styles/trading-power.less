@@ -1,0 +1,174 @@
+@import "fonts";
+
+.trading-power {
+    display: flex;
+    align-self: center;
+    background: url("/assets/img/bg-trading-power.jpg") no-repeat center;
+    background-size: cover;
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 79px;
+    padding-bottom: 53px;
+  }
+
+}
+
+.trading-power-header {
+  padding-right: 114px;
+
+  i {
+    position: absolute;
+    top:-20px;
+    right:-60px;
+    color: #ffcd00;
+    font-size: 30px;
+  }
+
+  h1 {
+    position: relative;
+    color: #ffffff;
+    font-family: "ProximaNovaBold";
+    font-size: 47px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+  }
+
+  button {
+    display: block;
+    width: 180px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: #ffcd00;
+    color: #141414;
+    font-family: "ProximaNovaBold";
+    font-size: 14px;
+    border:none;
+    text-transform: uppercase;
+
+    &:hover, &:active, &:focus {
+      background-color: #ffd700;
+    }
+  }
+
+}
+
+.trading-power-statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  button {
+    display: none;
+  }
+
+}
+
+.trading-power-inf {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+
+    h3 {
+      color: #ffffff;
+      font-family: "ProximaNovaBold";
+      font-size: 20px;
+      line-height: 35px;
+
+
+      i {
+        color: #ffcd00;
+        padding-right: 20px;
+
+      }
+    }
+
+  span {
+    color: #ffcd00;
+    font-family: "ProximaNovaBold";
+    font-size: 30px;
+    line-height: 22.84px;
+    text-transform: uppercase;
+  }
+
+}
+
+@media screen and (min-width: 421px) and (max-width :@screen-tablet) {
+  .trading-power {
+    .wrapper {
+      flex-wrap: wrap;
+
+      .trading-power-header {
+
+      }
+    }
+  }
+
+  .trading-power-statistics {
+    flex-direction: column;
+
+    .trading-power-inf {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width : @screen-mobile) {
+  .trading-power {
+    .wrapper {
+    flex-wrap: wrap;
+  }
+  }
+
+
+
+  .trading-power-statistics {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    button {
+      align-self: center;
+      display: block;
+      width: 180px;
+      height: 60px;
+      border-radius: 2px;
+      background-color: #ffcd00;
+      color: #141414;
+      font-family: "ProximaNovaBold";
+      font-size: 14px;
+      border:none;
+      text-transform: uppercase;
+    }
+
+    .trading-power-inf {
+      padding-bottom: 40px;
+      padding-left: 0;
+    }
+  }
+
+  .trading-power-header {
+
+    h1 {
+      padding-bottom: 30px;
+    }
+
+    button {
+      display: none;
+      width: 180px;
+      height: 60px;
+      border-radius: 2px;
+      background-color: #ffcd00;
+      color: #141414;
+      font-family: "ProximaNovaBold";
+      font-size: 14px;
+      border:none;
+      text-transform: uppercase;
+    }
+
+  }
+}
